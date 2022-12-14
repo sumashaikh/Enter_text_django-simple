@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>template is working</title>
+</head>
+<body>
+<h1>Enter Text</h1>
+<!--<form action = "" method = "GET">-->
+<!--    {% csrf_token %}-->
+<!--    <label for="your_name">Your name: </label>-->
+<!--    <input id="your_name" type="text" name="your_name">-->
+<!--    <input type="submit" value="OK">-->
+<!--</form>-->
+
+
+<form action='/analyze' method='GET'>
+    {% csrf_token %}
+    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea>
+    <button type='submit'> Analyze Text</button>
+
+
+</body>
+</html>
